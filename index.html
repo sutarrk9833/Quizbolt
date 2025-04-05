@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grade 10 Quiz Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Navbar -->
+
+
+<!-- Welcome Page -->
+<div class="page welcome-page">
+  <div class="container">
+    <h1>Welcome to QuizBolt</h1>
+    <p class="subtitle">Select a subject to start your quiz</p>
+
+    <div class="subject-grid">
+      <a href="#" class="subject-card" data-subject="math1">
+        <div class="icon-wrapper math">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+        </div>
+        <h3>Mathematics 1</h3>
+        <p>Algebra and Functions</p>
+      </a>
+
+      <a href="#" class="subject-card" data-subject="math2">
+        <div class="icon-wrapper math">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"><rect x="4" y="4" width="16" height="16"/></svg>
+        </div>
+        <h3>Mathematics 2</h3>
+        <p>Geometry and Trigonometry</p>
+      </a>
+
+      <a href="#" class="subject-card" data-subject="science1">
+        <div class="icon-wrapper science">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"><path d="M12 2L2 22h20L12 2z"/></svg>
+        </div>
+        <h3>Science 1</h3>
+        <p>Physics and Chemistry</p>
+      </a>
+
+      <a href="#" class="subject-card" data-subject="science2">
+        <div class="icon-wrapper science">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"><circle cx="12" cy="12" r="6"/></svg>
+        </div>
+        <h3>Science 2</h3>
+        <p>Biology and Earth Science</p>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Quiz Page -->
+<div class="page quiz-page hidden" id="quiz-page">
+  <div class="container">
+    <div class="quiz-header">
+      <h2>Quiz Title</h2>
+      <div class="timer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+        <span id="timer">0s</span>
+      </div>
+    </div>
+
+    <div class="question-container">
+      <div class="question-header">
+        <span id="progressText">Question 1 of 10</span>
+      </div>
+      <p class="question" id="question">Question text here</p>
+      <div class="choices" id="choices"></div>
+      <div class="navigation">
+        <span class="status" id="status">Select an answer</span>
+        <button class="next-btn" id="nextBtn">
+          Next
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"><path d="M8 5l8 7-8 7V5z"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Score Page -->
+<div class="page score-page hidden" id="score-page">
+  <div class="container">
+    <div class="score-card">
+      <h2>Quiz Completed! 🎉</h2>
+      <p class="subject">Your Results</p>
+      <div class="grade">A+</div>
+      <div class="score" id="result">You scored X out of Y</div>
+      <div class="percentage">90% Correct</div>
+      <a href="#" class="try-again-btn">Try Another Quiz</a>
+      <p class="footer-text">All rights reserved.</p>
+    </div>
+  </div>
+</div>
+
+<!-- About Us Page -->
+<div class="page about-page hidden" id="about-page">
+  <div class="container">
+    <div class="about-card">
+      <h2>About Us</h2>
+      <p class="tagline">Empowering students through knowledge</p>
+      <p>Welcome to the Grade 10 Quiz Portal, your one-stop destination for testing your knowledge in Mathematics and Science. Our platform is designed to help students learn in a fun and interactive way.</p>
+      <h3>🎯 Our Mission</h3>
+      <p>To provide an engaging and educational experience that helps students enhance their skills and confidence in key subjects.</p>
+      <h3>📞 Contact Us</h3>
+      <p>Email: support@quizportal.com</p>
+      <p>Phone: +1 234 567 890</p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
